@@ -26,6 +26,6 @@ public class SellerController {
         sellers.add(new Seller("321654987", "Martina", "Rodríguez", 'F', (byte)25, Pereira));
         sellers.add(new Seller("789123456", "Fernando", "Martínez", 'M', (byte)40, Pereira));
 
-        return sellers;
+        return sellers ;
     }
 }
