@@ -1,5 +1,5 @@
 package co.edu.umanizales.myfirstapi1.Service;
 
-public class LocationService {
+public class SellerService {
 }
-//locations:list
+//sellers:list

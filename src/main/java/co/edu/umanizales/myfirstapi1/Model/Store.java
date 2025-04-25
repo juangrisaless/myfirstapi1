@@ -13,6 +13,4 @@ public class Store {
     private Location location;
     private String address;
     private String phone;
-    private Seller manager;
-    private boolean active;
 }
