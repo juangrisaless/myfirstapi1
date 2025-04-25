@@ -18,7 +18,7 @@ public class SellerController {
         List<Seller> sellers = new ArrayList<>();
 
         Location Manizales = new Location("17001", "Manizales");
-        Location Pereira = new Location("660000" , "Pereira");
+        Location Pereira = new Location("66001", "Pereira");
 
         sellers.add(new Seller("123456789", "Juan", "Grisales", 'M', (byte)30, Manizales));
         sellers.add(new Seller("987654321", "Paula", "Matiz", 'F', (byte)28, Manizales));

@@ -5,11 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/sale")
+@RequestMapping("/sale")
 public class SaleController {
 
+    // Método original CORREGIDO (sin referencia a stores)
     @GetMapping
-    public String getSale(){
+    public String getSale() {
         return "Venta";
     }
 }

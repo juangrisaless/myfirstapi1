@@ -12,15 +12,17 @@ import org.springframework.web.bind.annotation.RestController;
 public class LocationController {
     private final MunicipalityService municipalityService;
 
+    // Inyección de dependencia (Spring Boot 2.7+ / 3.x)
     public LocationController(MunicipalityService municipalityService) {
         this.municipalityService = municipalityService;
     }
 
     @GetMapping
     public Location getSampleLocation() {
-        // Ejemplo: Medellín (código 05001)
+        // Buscar el municipio por código
         Municipality municipality = municipalityService.getMunicipalityByCode("05001");
-        if(municipality != null) {
+
+        if (municipality != null) {
             return new Location(
                     municipality.getMunicipalityCode(),
                     municipality.getMunicipalityName()
