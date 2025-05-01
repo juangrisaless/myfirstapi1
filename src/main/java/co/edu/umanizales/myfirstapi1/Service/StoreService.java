@@ -104,4 +104,3 @@ public class StoreService {
         return result;
     }
 }
-//stores:list
